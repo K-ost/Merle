@@ -2,73 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>UI Elements</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
 
   <body>
-    <div class="container">
-      <h1>UI</h1>
-      <h2>Forms</h2>
-      <div class="text-field">
-        <input type="text" class="input" placeholder="Номер телефону">
+<header class="header">
+  <div class="header-time">
+    з 10:00 до 21:00 без вихідних
+  </div>
+  <div class="container">
+    <div class="grid grid-3 header-middle">
+      <div class="subscription subscription-search">
+  <form action="#">
+    <div class="subscription-box">
+      <input type="search" class="input subscription-email" placeholder="Пошук">
+      <button class="subscription-btn"></button>
+    </div>
+  </form>
+</div><!-- /subscription -->
+      <div class="header-logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="">
+        </a>
       </div>
-      <div class="text-field">
-        <input type="text" class="input input-error" placeholder="Номер телефону">
-        <div class="text-field-message text-field-error">Required field</div>
+      <div class="header-icons">
+        <a href="#" class="headerIcon headerIcon-favorites"></a>
+        <a href="#" class="headerIcon headerIcon-user"></a>
+        <a href="#" class="headerIcon headerIcon-cart"></a>
       </div>
-      <hr>
-      <div class="check-group">
-        <label class="check-field">
-          <input type="checkbox" class="input-check">
-          Checkbox 1
-        </label>
-        <label class="check-field">
-          <input type="checkbox" class="input-check">
-          Checkbox 2
-        </label>
-        <label class="check-field">
-          <input type="checkbox" class="input-check">
-          Checkbox 3
-        </label>
-      </div>
-      <hr>
-      <div class="check-group">
-        <label class="check-field">
-          <input type="radio" class="input-radio" name="radio-buttons">
-          Radio btn 1
-        </label>
-        <label class="check-field">
-          <input type="radio" class="input-radio" name="radio-buttons">
-          Radio btn 2
-        </label>
-        <label class="check-field">
-          <input type="radio" class="input-radio" name="radio-buttons">
-          Radio btn 3
-        </label>
-      </div>
-      <button class="btn">Primary</button>
-      <button class="btn btn-secondary">Secondary</button>
-      <a href="#" class="btn btn-more_icon">читати більше</a>
-      <button class="btn btn-more">Показати ще </button>
+    </div><!-- /header-middle -->
+    <nav class="navmenu">
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">контакти</a></li>
+        <li><a href="#">таблиця розмірів</a></li>
+        <li><a href="#">блог</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Доставка і оплата</a></li>
+      </ul>
+    </nav>
+    <ul class="breadcrumbs">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Блог</a></li>
+      <li>ProDx Health entered the market</li>
+    </ul>
+  </div>
+</header><!-- /header -->
 
-      <hr>
+<div class="container">
+  <h1>UI</h1>
 
-      <section class="section">
-        <h2>Products</h2>
-        <div class="grid grid-4 grid-lg-2 grid-sm-1">
-          <div class="product">
+  <h2>Forms</h2>
+  <section class="section">
+    <div class="text-field">
+      <input type="text" class="input" placeholder="Номер телефону">
+    </div>
+    <div class="text-field">
+      <input type="text" class="input input-error" placeholder="Номер телефону">
+      <div class="text-field-message text-field-error">Required field</div>
+    </div>
+    <hr>
+
+    <div class="check-group">
+      <label class="check-field">
+        <input type="checkbox" class="input-check">
+        Checkbox 1
+      </label>
+      <label class="check-field">
+        <input type="checkbox" class="input-check">
+        Checkbox 2
+      </label>
+      <label class="check-field">
+        <input type="checkbox" class="input-check">
+        Checkbox 3
+      </label>
+    </div>
+    <hr>
+
+    <div class="check-group">
+      <label class="check-field">
+        <input type="radio" class="input-radio" name="radio-buttons">
+        Radio btn 1
+      </label>
+      <label class="check-field">
+        <input type="radio" class="input-radio" name="radio-buttons">
+        Radio btn 2
+      </label>
+      <label class="check-field">
+        <input type="radio" class="input-radio" name="radio-buttons">
+        Radio btn 3
+      </label>
+    </div>
+    <hr>
+
+    <button class="btn">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <a href="#" class="btn btn-more_icon">читати більше</a>
+    <button class="btn btn-more">Показати ще </button>
+  </section>
+
+  <section class="section">
+    <h2>Products</h2>
+    <div class="grid grid-4 grid-lg-2 grid-sm-1">
+      <div class="product">
   <div class="product-img">
     <a href="#"><img src="images/uploads/img1.jpg" alt="" /></a>
     
@@ -173,13 +217,13 @@
 </div>
 <!-- /product -->
 
-        </div>
-      </section>
+    </div>
+  </section>
 
-      <section class="section">
-        <h2>Blog</h2>
-        <div class="grid grid-4 grid-lg-2 grid-sm-1">
-          <div class="blogItem">
+  <section class="section">
+    <h2>Blog</h2>
+    <div class="grid grid-4 grid-lg-2 grid-sm-1">
+      <div class="blogItem">
   <div class="blogItem-img">
     <a href="#">
       <img src="images/uploads/blog.jpg" alt="">
@@ -228,10 +272,10 @@
   <div class="blogItem-text">Primary objectives included establishing a credible diagnostic brand, launching a fully operational DTC storefront, enabling efficient customer acquisition, and laying the foundation for future product expansion.</div>
   <a href="#" class="btn btn-more_icon">читати більше</a>
 </div><!-- /blogItem -->
-        </div>
-      </section>
-      
     </div>
+  </section>
+  
+</div><!-- /container -->
 
     <foorer class="footer">
       <div class="container">
@@ -241,14 +285,14 @@
             <div class="footer-logo">
               <a href="#"><img src="images/logo.svg" alt=""></a>
             </div>
-            <div class="subscription">
-              <form action="#">
-                <div class="subscription-box">
-                  <input type="email" class="input subscription-email" placeholder="Введіть ваш email">
-                  <button class="subscription-btn"></button>
-                </div>
-              </form>
-            </div><!-- /subscription -->
+            <div class="subscription ">
+  <form action="#">
+    <div class="subscription-box">
+      <input type="email" class="input subscription-email" placeholder="Введіть ваш email">
+      <button class="subscription-btn"></button>
+    </div>
+  </form>
+</div><!-- /subscription -->
           </div><!-- /footer-first -->
           <div class="footer-payment">
             <div class="footer-box">

@@ -2,33 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Home page</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
 
   <body>
-    <div class="container">
-      
-      <section class="section">
-        <h1>Merle pages</h1>
-        
-        <ol>
-          <li><a href="ui.html" target="_blank">UI</a></li>
-        </ol>
-      </section>
-      
+<header class="header">
+  <div class="header-time">
+    з 10:00 до 21:00 без вихідних
+  </div>
+  <div class="container">
+    <div class="grid grid-3 header-middle">
+      <div class="subscription subscription-search">
+  <form action="#">
+    <div class="subscription-box">
+      <input type="search" class="input subscription-email" placeholder="Пошук">
+      <button class="subscription-btn"></button>
     </div>
+  </form>
+</div><!-- /subscription -->
+      <div class="header-logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="header-icons">
+        <a href="#" class="headerIcon headerIcon-favorites"></a>
+        <a href="#" class="headerIcon headerIcon-user"></a>
+        <a href="#" class="headerIcon headerIcon-cart"></a>
+      </div>
+    </div><!-- /header-middle -->
+    <nav class="navmenu">
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">контакти</a></li>
+        <li><a href="#">таблиця розмірів</a></li>
+        <li><a href="#">блог</a></li>
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Доставка і оплата</a></li>
+      </ul>
+    </nav>
+    <ul class="breadcrumbs">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Блог</a></li>
+      <li>ProDx Health entered the market</li>
+    </ul>
+  </div>
+</header><!-- /header -->
+    
+<div class="container">
+  
+  <section class="section">
+    <h1>Merle pages</h1>
+
+    <p><a href="https://k-ost.github.io/Merle/" target="_blank">Live url</a></p>
+    
+    <ol>
+      <li><a href="ui.html" target="_blank">UI</a></li>
+    </ol>
+  </section>
+  
+</div><!-- /container -->
 
     <foorer class="footer">
       <div class="container">
@@ -38,14 +79,14 @@
             <div class="footer-logo">
               <a href="#"><img src="images/logo.svg" alt=""></a>
             </div>
-            <div class="subscription">
-              <form action="#">
-                <div class="subscription-box">
-                  <input type="email" class="input subscription-email" placeholder="Введіть ваш email">
-                  <button class="subscription-btn"></button>
-                </div>
-              </form>
-            </div><!-- /subscription -->
+            <div class="subscription ">
+  <form action="#">
+    <div class="subscription-box">
+      <input type="email" class="input subscription-email" placeholder="Введіть ваш email">
+      <button class="subscription-btn"></button>
+    </div>
+  </form>
+</div><!-- /subscription -->
           </div><!-- /footer-first -->
           <div class="footer-payment">
             <div class="footer-box">
